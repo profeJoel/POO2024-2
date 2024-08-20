@@ -18,8 +18,35 @@ void ingresoDatos(autito *a){
     printf("\nFin de ingreso de datos...\n");
 }
 
-void imprimirDatos(autito *a){
-    printf("\nAuto\n Marca: %s (%s) - %d", *a->marca, *a->modelo, a->anho);
+void modificarDatos(autito *a){
+    printf("Ingrese la marca del auto: ");
+    fflush(stdin);
+    fgets(a->marca, 50, stdin);
+    fflush(stdin);
+    printf("Ingrese el modelo: ");
+    fgets(a->modelo, 50, stdin);
+    printf("Ingrese el anho: ");
+    scanf("%d",&(*a).anho);
+    printf("\nFin de ingreso de datos...\n");
+}
+
+void ordenarVector(autito lista[], int n){
+    autito aux;
+    int i, j;
+    for (i = 0; i < n; i++){
+        for (j = 0; j < n; j++){
+            if(lista[j].anho < lista[i].anho){
+                aux = lista[j];
+                lista[j] = lista[i];
+                lista[i] = aux;
+            }
+        } 
+    }
+    
+}
+
+void imprimirDatos(autito a){
+    printf("\nAuto\n Marca: %s (%s) - %d", a.marca, a.modelo, a.anho);
 }
 
 int main(){
@@ -35,7 +62,16 @@ int main(){
         ingresoDatos(&listadoAutos[i]);
 
     for(i=0; i<n; i++)
-        imprimirDatos(&listadoAutos[i]);
+        imprimirDatos(listadoAutos[i]);
+
+    modificarDatos(&listadoAutos[0]);
+    for(i=0; i<n; i++)
+        imprimirDatos(listadoAutos[i]);
+
+    ordenarVector(listadoAutos, n);
+
+    for(i=0; i<n; i++)
+        imprimirDatos(listadoAutos[i]);
 
     return 0;
 }
