@@ -42,7 +42,20 @@ void ordenarVector(autito lista[], int n){
             }
         } 
     }
-    
+}
+
+void ordenarAlfabeticamente(autito lista[], int n){
+    autito aux;
+    int i, j;
+    for (i = 0; i < n; i++){
+        for (j = 0; j < n; j++){
+            if(lista[j].modelo[0] > lista[i].modelo[0]){
+                aux = lista[j];
+                lista[j] = lista[i];
+                lista[i] = aux;
+            }
+        } 
+    }
 }
 
 void imprimirDatos(autito a){
@@ -68,8 +81,15 @@ int main(){
     for(i=0; i<n; i++)
         imprimirDatos(listadoAutos[i]);
 
+    printf("\n Vector ordenado por anho:\n");
     ordenarVector(listadoAutos, n);
 
+    for(i=0; i<n; i++)
+        imprimirDatos(listadoAutos[i]);
+
+    ordenarAlfabeticamente(listadoAutos, n);
+
+    printf("\n Vector ordenado alfabeticamente:\n");
     for(i=0; i<n; i++)
         imprimirDatos(listadoAutos[i]);
 
