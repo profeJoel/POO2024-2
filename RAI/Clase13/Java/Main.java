@@ -17,5 +17,17 @@ public class Main {
     garfield.ronrronea();
     goofy.olfatea();
     chickenLittle.poneHuevo();
+
+    //Agrupacion
+    //Arreglo de tipo Animal (superclase)
+    Animal[] listaAnimales = new Animal[4];
+    listaAnimales[0] = animal1;
+    listaAnimales[1] = garfield;
+    listaAnimales[2] = goofy;
+    listaAnimales[3] = chickenLittle;
+
+    for(Animal a : listaAnimales){
+        System.out.println("Animal es " + a.nombre);
+    }
   }  
 }
