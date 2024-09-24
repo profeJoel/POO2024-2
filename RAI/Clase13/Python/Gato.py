@@ -7,3 +7,6 @@ class Gato(Animal):
     
     def ronrronea(self):
         print(self.nombre + " esta ronrroneando")
+    
+    def hace_sonido(self):
+        print(self.nombre + " hace Miauu...")

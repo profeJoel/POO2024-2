@@ -8,3 +8,6 @@ class Pollo(Animal):
 
     def poner_huevo(self):
         print(self.nombre + " pone huevos ")
+
+    def hace_sonido(self):
+        print(self.nombre + " hace Piopio...")

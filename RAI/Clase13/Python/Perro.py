@@ -7,3 +7,6 @@ class Perro(Animal):
 
     def olfatea(self):
         print(self.nombre + " olfatea")
+
+    def hace_sonido(self):
+        print(self.nombre + " hace Guau...")
