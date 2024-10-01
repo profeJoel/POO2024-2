@@ -11,5 +11,10 @@ public class Pollo extends Animal{
     public void poneHuevo(){
         System.out.println(this.nombre + "Ha puesto un huevo");
     }
+
+    @Override
+    public void haceSonido(){
+        System.out.println(this.nombre + " hace Piopio...");
+    }
     
 }

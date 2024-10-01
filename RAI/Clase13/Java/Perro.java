@@ -11,5 +11,10 @@ public class Perro extends Animal{
     public void olfatea(){
         System.out.println(this.nombre + " esta olfateando...");
     }
+
+    @Override
+    public void haceSonido(){
+        System.out.println(this.nombre + " hace guauu...");
+    }
     
 }

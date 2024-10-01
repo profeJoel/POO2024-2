@@ -8,5 +8,6 @@ class Gato(Animal):
     def ronrronea(self):
         print(self.nombre + " esta ronrroneando")
     
+    #@override
     def hace_sonido(self):
         print(self.nombre + " hace Miauu...")
