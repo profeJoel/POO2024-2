@@ -1,0 +1,4 @@
+Esta es una linea incorporada luego de la anterior con appendEste es un texto que permite escribir sobre un archivo 
+Ahora voy a escribir una siguiente linea 
+Ultimo intento
+Esta es una linea incorporada luego de la anterior con append
