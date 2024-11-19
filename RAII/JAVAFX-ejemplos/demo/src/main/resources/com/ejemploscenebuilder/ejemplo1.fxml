@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" style="-fx-background-color: EEC7CF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ejemploscenebuilder.Ejemplo1Controller">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Twemoji_1f600.svg.png" />
+         </image>
+      </ImageView>
+      <Label prefHeight="127.0" prefWidth="147.0" style="-fx-border-color: 19b91c;" text="Este es el primer diseño" textAlignment="CENTER" textFill="#11c91a">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#decirHola" style="-fx-background-color: E00E79;" text="OK" textFill="WHITE">
+         <font>
+            <Font name="Futura Bold" size="13.0" />
+         </font></Button>
+   </children>
+</VBox>
